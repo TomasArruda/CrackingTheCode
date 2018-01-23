@@ -1,3 +1,5 @@
+package c1;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -5,14 +7,14 @@ public class CheckPermutation {
 
     public static boolean checkPermutation(String word1, String word2){
         if (word1.length() == word2.length()) {
-            ArrayList<Character> arrayChar = new ArrayList<>();
+            int[] array = new int[256];
 
             for (int i = 0; i < word1.length(); i++) {
-                arrayChar.add(word1.charAt(i));
+                array[word1.charAt(i)] ++;
             }
 
             for (int i = 0; i < word2.length(); i++) {
-                if(!arrayChar.contains(word2.charAt(i))){
+                if (--array[word2.charAt(i)] < 0) {
                     return false;
                 }
             }

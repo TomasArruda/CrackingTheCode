@@ -1,3 +1,5 @@
+package c1;
+
 import java.util.Hashtable;
 import java.util.Scanner;
 

@@ -1,3 +1,5 @@
+package c1;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -12,7 +14,7 @@ public class PermutationPalindrome {
                 set.remove(s.charAt(i));
             }
         }
-        return set.size()<2;
+        return set.size() == 1;
     }
 
     public static String makeResponse(boolean result, ArrayList<String> pList){

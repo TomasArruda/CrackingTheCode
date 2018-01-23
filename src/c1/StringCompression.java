@@ -1,10 +1,10 @@
-import java.util.Hashtable;
+package c1;
+
 import java.util.Scanner;
 
 public class StringCompression {
     public static String stringCompression(String word) {
         String result = "";
-        Hashtable<Character, Integer> hash = new Hashtable<>();
 
         int counter = 1;
         char firstChar = word.charAt(0);
